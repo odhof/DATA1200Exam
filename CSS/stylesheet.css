@@ -54,7 +54,7 @@ h1 {
 
     .menu-icon {                                       /** Legge til selve Hamburger-menu-ikonet **/
         display: block;
-        background-image: url(../Media/burger-menu.svg);     
+        background-image: url(../Media/burger-menu2.svg);     
         background-size: cover;                             
         height: 40px;                                  /** BLir ikke synlig på siden før størrelse er definert **/
         width: 40px;                            
