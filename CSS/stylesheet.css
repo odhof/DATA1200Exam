@@ -10,6 +10,8 @@ if it improves readability" altså evt. ha en liste her øverst... */
   } 
 
 body {
+    margin: unset;
+    font-family: Arial, Helvetica, sans-serif;
   }
 
 header {
@@ -34,7 +36,88 @@ h1 {
 }
 
 
-/* Hamburger menu */
+/* NAV-BAR - HAMBURGER */ 
+  
+.navbar {
+    background: grey;
+    color: black;
+    position: relative;             /* Fordi vi vil ha Button i top-right corner, må denne være "relative" */
+  }
+
+  .navbar ul {                       /* selects ul-elements within .navbar-class */
+    margin: unset;
+    padding: unset;
+    list-style: none;                /* fjerner bullet points fra ul-listen */
+    display: flex;                   /* -> links er nå horizontally aligned */
+  }
+
+  .navbar .nav-toggle {
+    display: flex;
+  }
+
+  .navbar a {                       /* alle a-tags (links) innen nav-baren */
+    padding: 1em;
+    color: inherit;                 /* a-tags "arver" fra en parent-element */
+    text-decoration: none;          /* fjerner underline fra links */
+    display: inline-block;           /* muliggjør mer padding også under/over linkene (inline-elementer) */
+  }
+
+  .navbar a.home {
+    background: darkkhaki;
+  }
+
+  .navbar a:hover {
+    background: rgb(179, 170, 170);
+  }
+
+  .navbar .hamburger {
+    position: absolute;              /* absolute positioning = meant to pos. something within a parent (parent til button = nav-elementet) - if you want absolute pos. within a parent element, that parent needs something else than default positioning ("static" = default */
+    top: 0;
+    right: 0;
+    border: unset;
+    background: unset;
+    cursor: pointer;
+    display: none;                  /* Hider Hamburger-button når screen-size er over 650px */
+  }
+
+  .navbar .hamburger svg {
+    stroke: black;
+  }
+
+  .navbar .hamburger .icon-close {
+    display: none;
+  }
+                                                     
+  @media screen and (max-width: 650px) {           /* Alt her vil styles når vi er mellom 0-650px  */
+    .navbar.open ul {                         /* If we have a navbar, has also an "open"-class, then we select a ul  */
+        display: block;
+    }
+
+    .navbar.open .nav-toggle {         /* Her = .navbar med .open-klassen */ 
+        display: block;                 /* When you have a selector with multiple classes, its considered more specific */
+    }
+
+    .navbar.open a {
+        display: block;
+    }
+
+    .navbar .nav-toggle {                                 
+        display: none;            /* Skjuler alle links (untatt home) når screen size < 650px*/
+        }                        /* Her = .navbar uten noen klasse - i motsetning til over hvor du har .navbar med .open-class */ /* When you have a selector with multiple classes, its considered more specific */ /* Selctor specificity 3 vs. 2 (hold over for å se) - hvordan CSS vet hva som skal ha prioritet */
+    
+    .navbar .hamburger {
+        display: block;
+    }
+    
+    .navbar.open .hamburger .icon-open {
+        display: none;
+    }
+
+    .navbar.open .hamburger .icon-close {
+        display: block;
+    }
+
+  }
 
 
 
