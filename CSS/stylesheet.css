@@ -36,61 +36,6 @@ h1 {
 
 /* Hamburger menu */
 
-#burger-toggle {display: none;}    /* Gjemmer checkboxen */
-                                   /* Media queries gir x CSS-egenskaper hvis y kriterier er oppfylt */
-@media (min-width: 701px) {
-    .menu {
-        display: flex;
-        flex-direction: row;            /* Kolonne -> row */
-        list-style-type: none;          /* Fjerner kulepunkter */
-        justify-content: center;        /* Sentrerer listen når man ikke bruker all tilgjengelig plass på siden */
-    }   
-                                        
-    .menu li {padding-right: 4rem;}     /* Endrer list items i menyen - og lager mellomrom mellom list items */ 
-}     
-
-@media (max-width: 700px) {
-    .menu {
-        list-style-type: none;
-        position: sticky;                   /* Drop-down menyen legger seg oppå alt annet */
-        padding-left: 0px;                  /* Drop-down menyen lenger til venstre */
-    }
-
-    .menu-icon {                                       /* Legge til selve Hamburger-menu-ikonet */
-        display: block;
-        background-image: url(../Media/burger-menu2.svg);     
-        background-size: cover;                             
-        height: 40px;                                  /* BLir ikke synlig på siden før størrelse er definert */
-        width: 40px;                            
-    }
- 
-    .hamburger-toggle-container {cursor: pointer;}      /* Musepeker blir pointer når man holder over B-menu */
-
-    .menu li {                            /* Gjemme menyen til ikonet klikkes på */
-        height: 0px;
-        overflow: hidden;                /* Menyen er der fortsatt (m/ 0px height), til du gjemmer overflow */
-    }
-
-    #burger-toggle:checked ~ .menu li {    /* Funksjon - Menyen vises når ikonet klikkes på */
-        height: 1rem;                      /* når Burger-toggle er checked (klikket på)-> vil alle children (list items i menu-klassen) blir synlige */
-        width: auto;
-        padding-left: 0.5rem;
-        padding-right: 0.5rem;
-        padding-bottom: 0.5rem;
-        background-color:#fdf3cf;              
-    }
-
-    /* STATUS - menyen dekker fortsatt hele bredden av siden når den åpnes.
-    Dette vil vi ikke. Vi vil ha den til å åpne en smal DROP-DOWN-menu ned på siden. 
-    For å gjøre det endrer vi på NAV-elementet. */
-
-    nav {
-        display: flex;
-        height: 40px;
-    }
-}
-
-
 
 
 
