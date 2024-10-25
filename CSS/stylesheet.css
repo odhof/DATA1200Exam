@@ -137,6 +137,15 @@ th, td {
 th {
     text-align: left;
 }
+.underfane{
+  margin-left: 30px;
+}
+
+details{
+padding-left: 30%;
+padding-top:20px;
+font-size: medium;
+}
 
 
 
