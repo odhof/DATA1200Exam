@@ -113,6 +113,29 @@ h1 {
     }
 
   }
+  /* Tables */
+table {
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+    font-family:'Times New Roman', Times, serif
+}
+
+thead > tr {
+    background-color: #fdf3cf;
+}
+
+
+th, td {
+    border: 1px groove black;
+    border-collapse: collapse;
+    padding: 15px;
+    font-size: 20px;
+}
+
+th {
+    text-align: left;
+}
 
 
 
