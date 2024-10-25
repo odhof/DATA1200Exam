@@ -15,9 +15,9 @@ header {
 }
 
 .logo {
-    height: 20vh;
-    width: 20vw;
-    position: fixed;
+    height: 125px;
+    width: 125px;
+    position: relative;
     top: 0;
     left: 0;
     margin-top: 20px;
@@ -34,7 +34,7 @@ h1 {
 /* NAV-BAR - HAMBURGER */ 
   
 .navbar {
-    background: grey;
+    background: #fdf3cf;
     color: black;
     position: relative;             /* Fordi vi vil ha Button i top-right corner, må denne være "relative" */
   }
@@ -58,11 +58,11 @@ h1 {
   }
 
   .navbar a.home {
-    background: darkkhaki;
+    background: #e9c74d;
   }
 
   .navbar a:hover {
-    background: rgb(179, 170, 170);
+    background: #e2d191;
   }
 
   .navbar .hamburger {
