@@ -205,6 +205,54 @@ header {
   .accordian input[type="checkbox"]:checked + label::before{
       content: "-";
   }
+  /* Responsiv tilpasning små nettbrett, mobil */
+@media (max-width: 768px) {
+  .accordian {
+    margin: 30px auto;
+  }
+
+/* endrer størrelsen på elementer som font, padding og bredden på mindre skjermer 
+- forhindre at de tar for mye plass */
+  .accordian li {
+    margin: 10px 0;
+    padding: 8px;
+  }
+/* gir mer kompakt visning */
+  .accordian li label {
+    font-size: 14px;
+    padding: 8px;
+  }
+/* reduserer avstanden til labeltekst og +/- -tegn */
+  label::before {
+    margin-right: 8px;
+  }
+  .accordian .content {
+    font-size: 12px;
+    line-height: 22px;
+  }
+}
+/* Skjermtilpasset de minste mobilenhetene */
+@media (max-width: 480px) {
+  .accordian {
+    margin: 20px auto;
+  }
+  .accordian li {
+    margin: 8px 0;
+    padding: 6px;
+  }
+  .accordian li label {
+    font-size: 12px;
+    padding: 6px;
+  }
+  label::before {
+    margin-right: 6px;
+  }
+
+  .accordian .content {
+    font-size: 10px;
+    line-height: 18px;
+  }
+}
 
   /*CSS til activity-pace*/
   .body-activity{
