@@ -154,7 +154,7 @@ tr:hover td {
 }
 
 
-/* responsive small screens*/
+/* responsitiv til små skjermer */
 @media screen and (max-width: 768px) {
     table,thead,tbody,tr,th,td{
         display: block;
