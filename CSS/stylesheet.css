@@ -114,31 +114,52 @@ h1 {
 
   }
   /* Tables */
-table {
-    margin-top: 80px;
-    border-collapse: collapse;
-    margin-left: auto;
-    margin-right: auto;
-    font-family:'Times New Roman', Times, serif
+  table { 
+    width: 100%; /* Gjør tabellen responsiv */ 
+    border-collapse: separate; 
+    border-spacing: 0; 
+    background: #ffffff; 
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 800px;
+    margin: 20px auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-thead > tr {
-    background-color: #fdf3cf;
-}
-
-
-th, td {
-    border: 1px groove black;
-    border-collapse: collapse;
-    padding: 15px;
-    font-size: 20px;
-}
-
+/* Styling av overskrift */
 th {
+    background: #ffe481;
+    color: #2d3748;
+    font-weight: 600;
+    padding: 16px;
     text-align: left;
+    border-bottom: 2px solid #e2e8f0;
+    white-space: nowrap;
+    box-sizing: border-box;
 }
-.underfane{
-  margin-left: 30px;
+
+/* style hver celle */
+td {
+    padding: 14px;
+    border-bottom: 1px solid #e2e8f0;
+    color: #4a5568;
+    box-sizing: border-box;
+}
+
+/* Hover effect på rader */ 
+tr:hover td {
+    background-color: #f7fafc;
+}
+
+
+/* responsive small screens*/
+@media screen and (max-width: 768px) {
+    table,thead,tbody,tr,th,td{
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+    }
 }
 
 details{
