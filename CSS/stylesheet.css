@@ -154,7 +154,7 @@ h1 {
 }
 
 
-/* responsitiv til små skjermer */
+/* responsitiv til små skjermer/mobile enheter */
 @media screen and (max-width: 768px) {
     table,thead,tbody,tr,th,td{
         display: block;
