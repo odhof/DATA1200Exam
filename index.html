@@ -41,7 +41,7 @@
     
 <main>
     <article>
-        <table>
+        <table class="table-program-info">
             <thead>
                 <tr>
                     <th>Studiested</th>
@@ -66,100 +66,137 @@
             </tbody>  
         </table>
     </article>
-
     <article>
-        <p>Få oversikt i matematisk modellering ig datadrevne metoder som kan løse mange praktiske og samfunnsnyttige oppgaver</p>
+        <p>Få oversikt i matematisk modellering og datadrevne metoder som kan løse mange praktiske og samfunnsnyttige oppgaver</p>
     
-        <details>
-            <summary>Opptakskrav og poeng</summary>
-            <p>For å søke på dette programmet må du ha
-                <br>
-                <li>generell studiekompetanse (samordnaopptak.no) eller oppfylle kravene til realkompetanse</li>
-                <li>matematikk R1 og R2</li>
-                <li>fysikk 1</li>
-                <br>
-                Det kan være konkurranse om plassene. Ved forrige opptak kom alle kvalifiserte søkere inn.
-                
-                Hvis du mangler generell studiekompetanse eller enkelte fag fra videregående skole, kan du søke på dette studiet om du har <a href=https://www.oslomet.no/studier/tkd/forkurs-ingenior>bestått ettårig forkurs for ingeniørutdanning.</a></p>
-        </details>
+        <ul class="accordian">
+            <li>
+                <input type="checkbox" name="accordian" id="first" cheched>
+                <label for="first">Opptakskrav og poeng</label>
+                <div class="content">
+                    <p>For å søke på dette programmet må du ha: </p>
+                    <p>generell studiekompetanse (samordnaopptak.no) eller oppfylle kravene til realkompetanse</p>
+                    <p>matematikk R1 og R2</p>
+                    <p>fysikk 1</p>
+                <p>Det kan være konkurranse om plassene. Ved forrige opptak kom alle kvalifiserte søkere inn.
+                Hvis du mangler generell studiekompetanse eller enkelte fag fra videregående skole, 
+                kan du søke på dette studiet om du har <a href=https://www.oslomet.no/studier/tkd/forkurs-ingenior>
+                bestått ettårig forkurs for ingeniørutdanning.</a></p>
+                </div>
+                </li> 
     
-        <details>
-            <summary>Slik søker du</summary>
-            <p>Du søker på Søknadsweb med studiekode 1120.
-    
-                Søknadsfristen er 15. april.
-                
+            <li>
+                 <input type="checkbox" name="accordian" id="second">
+                 <label for="second">Slik Søker du</label>
+                <div class="content">
+                    <p>Du søker på Søknadsweb med studiekode 1120.</p>
+                    <p>Søknadsfristen er 15. april.</p>
                 <a href=https://www.oslomet.no/studier/soknad-og-opptak/opptak-til-forkurs-tre-terminsordning/forkurs-ingeniorutdanning>Mer om å søke på forkurs.</a></p>
-        </details>
+            </div>
+            </li>
     
-        <details>
-            <summary>Hva lærer du?</summary>
-            <p>Bachelor i matematisk modellering og datavitenskap kobler sammen matematikk, informatikk, fysikk og statistikk.  
-                Du får innsikt i matematiske modeller som brukes i praktisk problemløsning blant annet i medisinsk kjemi, biologiske prosesser og ulike samfunnssystemer. 
-                Det første studieåret har du emner i blant annet matematikk, programmering, fysikk og kjemi for å få en felles forståelse av tematikken.
-                Det siste semesteret skriver du en bacheloroppgave tett knyttet til problemstillinger i arbeidslivet.
-                Første året velger du hvilken av disse spesialiseringene du vil ta.</p>
-                    <details class="underfane"><summary>Statiske og datadrevne metoder</summary>
-                        <p>Du utforsker algebraiske strukturer, blant annet knyttet til dyp læring og kunstig intelligens.
+            <li>
+                <input type="checkbox" name="accordian" id="third">
+                <label for="third">Hva lærer du?</label>
+               <div class="content">
+                <p>Bachelor i matematisk modellering og datavitenskap kobler sammen matematikk, informatikk, fysikk 
+                    og statistikk. </p> 
+                <p>Du får innsikt i matematiske modeller som brukes i praktisk problemløsning blant annet i 
+                    medisinsk kjemi, biologiske prosesser og ulike samfunnssystemer.</p>
+                    <p>Det første studieåret har du emner i blant annet matematikk, programmering, fysikk og kjemi 
+                        for å få en felles forståelse av tematikken.</p>
+                        <p>Det siste semesteret skriver du en bacheloroppgave tett knyttet til problemstillinger i 
+                            arbeidslivet.</p>
+                
+                <p>Første året velger du hvilken av disse spesialiseringene du vil ta.</p>
+                    <details class="underfane"><summary>Statiske og datadrevne metoder</summary><p>Du utforsker algebraiske strukturer, blant annet knyttet til dyp læring og kunstig intelligens.
+    
                         Du lærer om hvordan du kan bruke målte data koblet med datadrevne og statistiske metoder til å gjøre beregninger, for eksempel av fremtidige strømpriser.
+    
                         Du lærer hvordan du kan løse komplekse og sammensatte problemer, og utforske høydimensjonale datatyper. Moderne metoder innen maskinlæring og kunstig intelligens står sentralt.</p></details>
-                    <details class="underfane"><summary>Vitenskapelige beregninger</summary>
-                        <p>Du lærer å lage effektive algoritmer, datastrukturer og kildekoder for å løse matematiske og fysiske problemer med numeriske metoder.
-                             Du lærer å utvikle kildekode og metodikk knyttet til medisinsk teknologi, biologiske prosesser og annet.</p></details>
-                    <details class="underfane"><summary>Matematikk og fysikk</summary>
-                        <p>Du utforsker algebraiske strukturer, blant annet knyttet til dyp læring og kunstig intelligens.
-                            Du lærer differensialgeometri på flater, gruppeteori og kodeteori; matematiske strukturer, representasjonsteori og kategoriteori.
+                    <details class="underfane"><summary>Vitenskapelige beregninger</summary><p>Du lærer å lage effektive algoritmer, datastrukturer og kildekoder for å løse matematiske og fysiske problemer med numeriske metoder.
+    
+                        Du lærer å utvikle kildekode og metodikk knyttet til medisinsk teknologi, biologiske prosesser og annet.</p></details>
+                    <details class="underfane"><summary>Matematikk og fysikk</summary><p>Du utforsker algebraiske strukturer, blant annet knyttet til dyp læring og kunstig intelligens.
+    
+                        Du lærer differensialgeometri på flater, gruppeteori og kodeteori; matematiske strukturer, representasjonsteori og kategoriteori.
+                        
                         I fysikk lærer du om termodynamikk og statistisk fysikk.</p></details>
                         <a href=" https://student.oslomet.no/studier/-/studieinfo/programplan/HINGMAMO/2024/H%C3%98ST">Se programplan på student.oslomet.no</a>
                         <br>
-        </details>
-        <details>
-            <summary>Studiets oppbygging</summary>
-            <p>NY FANCY TIMEPLAN HER</p>
-        </details>
-        <details>
-            <summary>Hvordan foregår undervisningen?</summary>
-            <p>Undervisningen er en kombinasjon av
-    
-                <li>prosjektarbeid</li>
-                <li>workshop</li>
-                <li>presentasjoner</li>
-                <li>veiledninger</li>
-                <li>diskusjoner og refleksjoner</li>
-                <li>forelesninger</li>
-                <li>selvstudier</li>
-                <li>gruppearbeid</li>
-                <li>arbeidslivsrelevant bacheloroppgave</li>
-                <br>
-            For å gjennomføre studiet på normert tid, må du regne med å bruke om lag 40 timer per uke på studierelatert arbeid gjennom hele semesteret.</p>
-            </details>
-        </details>
-        <details>
-            <summary>Hva koster det?</summary>
+                    </details>
+            </div>
+            </li>
+
+            <li>
+                <input type="checkbox" name="accordian" id="fourth">
+                <label for="fourth">Hva lærer du?</label>
+               <div class="content">
+                    <p>
+                      NY FANCY TIMEPLAN HER! 
+                    </p>
+                </div>
+            </li>
+
+        <li>
+            <input type="checkbox" name="accordian" id="fifth">
+            <label for="fifth">Hvordan foregår undervisningen?</label>
+            <div class="content">
+                <p>
+                    Undervisningen er en kombinasjon av
+                    <p>prosjektarbeid</p>
+                    <p>workshop</p>
+                    <p>presentasjoner</p>
+                    <p>veiledninger</p>
+                    <p>diskusjoner og refleksjoner</p>
+                    <p>forelesninger</p>
+                    <p>selvstudier</p>
+                    <p>gruppearbeid</p>
+                    <p>arbeidslivsrelevant bacheloroppgave</p>
+                    <p>For å gjennomføre studiet på normert tid, må du regne med å bruke om lag 40 timer per uke 
+                        på studierelatert arbeid gjennom hele semesteret.</p>
+            </div>
+        </li>
+
+        
+        <li>
+            <input type="checkbox" name="accordian" id="sixth">
+            <label for="sixth">Hva koster det?</label>
+           <div class="content">
             <p><a href=https://student.oslomet.no/semesteravgift>Du betaler en semesteravgift hvert semester (student.oslomet.no).</a>
                 <br>
                <a href="https://student.oslomet.no/studieavgift-for-internasjonale-studenter-utenfor-eu-eos">Er du internasjonal student fra utenfor EU og EØS, må du betale studieavgift (student.oslomet.no).</a> Det er mulig å søke om unntak for betaling av denne studieavgiften.</p>
-        </details>
-        <details>
-            <summary>Hva kan du jobbe som?</summary>
+               </div>  
+               </li>
+
+          <li>
+                <input type="checkbox" name="accordian" id="seventh">
+                <label for="seventh">Hva lærer du?</label>
+               <div class="content">
             <p>Med dette studiet får du IT-kompetanse som er etterspurt i arbeidslivet, særlig om du velger spesialiseringene vitenskapelige beregninger eller statistiske og datadrevne metoder. 
                 Spesialiseringen i matematikk og fysikk retter seg mer mot videre studier, men også her får du etterspurt kompetanse i arbeidslivet etter bachelorstudiet. 
                 Matematisk modellering og datavitenskap blir stadig viktigere som basisgrunnlag, i for eksempel beregninger knyttet til klima, forsikring og finans, og datadrevne metoder for verdiskaping. 
                 Datadrevne metoder og maskinlæring er i dag svært mye brukt i arbeidslivet.</p>
-        </details>
-        <details>
-            <summary>Utveksling</summary>
+                </div>
+                </li>
+
+                <li>
+                    <input type="checkbox" name="accordian" id="eighth">
+                    <label for="eighth">Hva lærer du?</label>
+                   <div class="content">
             <p>  Du kan dra på utveksling i femte semester.</p>
-        </details>
-        <details>
-            <summary>Videre studiemuligheter ved OsloMet</summary>
+                    </div>
+                    </li>   
+
+           <li>
+                <input type="checkbox" name="accordian" id="ninth">
+                <label for="ninth">Videre studiemuligheter ved Oslomet?</label>
+               <div class="content">
             <p><a href="https://www.oslomet.no/studier/tkd/anvendt-data-informasjonsteknologi">Anvendt data- og informasjonsteknologi</a></p>
         </details>
     </article>
-        
-    </main>
+</main>
 
-    
     <script src="../DATA1200Exam/functions.js"></script>    <!-- OBS! Script ALWAYS at the BOTTOM -->
 </body>
 </html>

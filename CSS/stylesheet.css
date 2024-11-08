@@ -7,6 +7,7 @@
 body {
     margin: unset;
     font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
   }
 
 header {
@@ -114,39 +115,103 @@ h1 {
 
   }
   /* Tables */
-table {
-    margin-top: 80px;
-    border-collapse: collapse;
-    margin-left: auto;
-    margin-right: auto;
-    font-family:'Times New Roman', Times, serif
+  .table-program-info { 
+    width: 100%; /* Gjør tabellen responsiv */ 
+    border-collapse: separate; 
+    border-spacing: 0; 
+    background: #ffffff; 
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 800px;
+    margin: 20px auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-thead > tr {
-    background-color: #fdf3cf;
-}
-
-
-th, td {
-    border: 1px groove black;
-    border-collapse: collapse;
-    padding: 15px;
-    font-size: 20px;
-}
-
-th {
+/* Styling av overskrift */
+.table-program-info th {
+    background: #ffe481;
+    color: #2d3748;
+    font-weight: 600;
+    padding: 16px;
     text-align: left;
-}
-.underfane{
-  margin-left: 30px;
+    border-bottom: 2px solid #e2e8f0;
+    white-space: nowrap;
+    box-sizing: border-box;
 }
 
-details{
-padding-left: 30%;
-padding-top:20px;
-font-size: medium;
-cursor: pointer;
+/* style hver celle */
+.table-program-info td {
+    padding: 14px;
+    border-bottom: 1px solid #e2e8f0;
+    color: #4a5568;
+    box-sizing: border-box;
 }
+
+/* Hover effect på rader */ 
+.table-program-info tr:hover td {
+    background-color: #f7fafc;
+}
+
+
+/* responsitiv til små skjermer/mobile enheter */
+@media screen and (max-width: 768px) {
+    table,thead,tbody,tr,th,td{
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+    }
+}
+
+    /*CSS til collapsible*/
+    
+    .accordian{
+      margin: 60px auto;
+      width: 600px;
+  }
+  
+  .accordian li{
+      list-style: none;
+      width: 100%;
+      margin: 20px;
+      padding: 10px; 
+      border-radius: 8px;
+      background-color: azure;
+  }
+  
+  .accordian li label{
+      display: flex;
+      align-items: center;
+      padding: 10px;
+      cursor: pointer;
+  }
+  
+  label::before{
+      content: "+";
+      margin-right: 10px;
+  }
+  
+  input[type="checkbox"]{
+      display: none;
+  }
+  
+  .accordian .content{
+      color: #555;
+      padding: 0 10px;
+      line-height: 26px;
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.5s, padding 0.5s;
+  }
+  
+  .accordian input[type="checkbox"]:checked + label + .content{
+      max-height: 1000px;
+      padding: 10px 10px 20px;
+  } 
+  
+  .accordian input[type="checkbox"]:checked + label::before{
+      content: "-";
+  }
 
 
 
