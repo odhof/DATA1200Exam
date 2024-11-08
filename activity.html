@@ -3,13 +3,126 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel = "stylesheet" type="text/css" href="...">   <!-- Stylesheet til Activity (?) -->
+    <link rel = "stylesheet" type="text/css" href="css/stylesheet.css">
     <title>Activity</title>
 </head>
 
 <body>
     <header>
+        <img class="activity-header" src="yarn.jpg">
     </header>
+    <h1>Strikking</h1>
+
+<main>
+    <section>
+        <img src="knitting.jpg" class="knitting" alt="Bildet er hentet fra knitterspride.com">
+    </section>
+
+    <section>
+        <h2>Hvordan begynte det?</h2>
+        <p>
+            2020 var et spesielt år for mange av oss. Vi måtte vende oss til en helt ny hverdag, med lite sosial omgang
+            og isolering. Jeg var ferdig med bachlorgraden min 6 måneder før og hadde begynt å vende meg til det typiske 
+            8-16, A4-livet. Under studietiden hadde hobbyen min vært å jobbe som frivillig i en SiOs studentforeninger, noe
+            jeg fortsatte med etter studietiden. Men da pandemien brøt ut og alle skulle isoleres måtte jeg finne en ny hobby.
+        </p>
+        <p>
+            Det begynte med hekling, noe som var gøy til å begynne med, men etter å ha blitt introdusert til"knitting-tok" (strikking på tik-tok),
+            ble ønske om å strikke gensere en motivasjon for å lære meg å strikke.
+        </p>
+    </section>
+
+    <section>
+        <h2>Mitt første prosjekt</h2>
+        <p>
+            Jeg hadde lest at <a href="https://www.minmote.no/strikk/strikkeoppskrifter/a/Al0bpn/strikkeoppskrift-minmote-genseren">
+            "Minmote genseren"</a> var et fint nybegynner-prosjekt. Men, for en som sist strikket i 9.klasse var det ikke 
+            lett å sette seg inn denne ny verden av ord for teknikker og forskjellige typer masker. Hva er forskjellen på en 
+            rett og en vrang maske? Hva i alle dager betyr glattstrikk, og hvordan feller man av? 
+            Hva menes med å plukke opp masker og hva i huleste betyr det å strikkeoppskrift med "magic-loop"?
+        </p>
+        <p>Heldigvis finner det mange videoer om strikking på <a href="https://www.youtube.com/results?search_query=strikking+for+nybegynnere">Youtube</a> 
+            og det hender at jeg fortsatt må ty til Youtube nå 4 år etter at strikkeeventyret mitt begynte.
+        </p>
+        <p>
+            Resultatet ble så-som-så. Genseren ble nokså trangt og hadde forskjellig lengde på ermene. Men det var bare et forbedringspotensiale
+            til neste prosjekt. Jeg ble hekta på strikking. Jeg tenkte på strikking på vei til og fra jobb, mens jeg var på jobb. Jeg drømte til og 
+            med om det når jeg sov. 
+        </p>
+        <p>
+            Likevel innså jeg fort at man ikke kommer langt med kun glattstrikk, rett- og vrangmasker i strikkerepertoaret. Det viste seg nemlig
+            at man ikke bare kan strikke en genser  nedenfra og opp, men også ovenfra og ned. Slik ble jeg introdusert til 
+            <a href="https://www.petiteknit.com/no/">PetiteKnit,</a> kanskje den største nettsiden for strikkeoppskrifter i norden.
+        </p>
+
+    </section>
+    <section>
+        <img src="minmotegenser.jpeg" class="minmotegenser" alt="bilde hentet fra minmote.no">
+    </section>
+
+    <section>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown 
+            printer took a galley of type and scrambled it to make a type specimen book. It has survived not 
+            only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
+            It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, 
+            and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem 
+            Ipsum.</p>
+    </section>
+    
+    <section>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown 
+            printer took a galley of type and scrambled it to make a type specimen book. It has survived not 
+            only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
+            It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, 
+            and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem 
+            Ipsum.</p>
+    </section>
+</main>
+
+    
     
 </body>
+
+<style>
+    body{
+        background-color: #EEEBDF;
+    }
+    .activity-header{
+        height: 400px;
+        width: 1100px;
+        align: center;
+    }
+
+    h1{
+        font-size: 50px;
+        text-align: center;
+    }
+
+    main{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    section{
+        max-width: 40%; /*for å få 2 boxer ved siden av hverandre*/
+        margin: 1em;
+        padding: 0.5em;
+        background-color: rgb(250, 240, 228);
+    }
+
+.knitting{
+    max-width: 100%; /* får bildet til å passe flexboxen*/
+    padding-top:10px;
+}
+
+.minmotegenser{
+    max-width: 100%; /*Får bildet til å passe flexboxen*/
+    max-height: 100%;
+}
+
+
+</style>
 </html>
