@@ -115,7 +115,7 @@ h1 {
 
   }
   /* Tables */
-  table { 
+  .table-program-info { 
     width: 100%; /* Gjør tabellen responsiv */ 
     border-collapse: separate; 
     border-spacing: 0; 
@@ -129,7 +129,7 @@ h1 {
 }
 
 /* Styling av overskrift */
-th {
+.table-program-info th {
     background: #ffe481;
     color: #2d3748;
     font-weight: 600;
@@ -141,7 +141,7 @@ th {
 }
 
 /* style hver celle */
-td {
+.table-program-info td {
     padding: 14px;
     border-bottom: 1px solid #e2e8f0;
     color: #4a5568;
@@ -149,7 +149,7 @@ td {
 }
 
 /* Hover effect på rader */ 
-tr:hover td {
+.table-program-info tr:hover td {
     background-color: #f7fafc;
 }
 
