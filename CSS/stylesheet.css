@@ -372,8 +372,8 @@ header {
 }
 
 .profile img {
-  width: 100%; /* Justert størrelse på bilde*/
-  height: 100%;
+  width: 75%; /* Justert størrelse på bilde*/
+  height: 75%;
   background: #eee;
 }
 
