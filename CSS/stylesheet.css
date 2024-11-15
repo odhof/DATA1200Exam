@@ -369,7 +369,7 @@ footer p{
 
 .grid-container{
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr; <!--Lager 3 colonner til grid-->
+  grid-template-columns: 1fr 1fr 1fr; /* Lager 3 colonner til grid */
   margin: 5px;
 }
 
