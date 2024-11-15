@@ -329,19 +329,70 @@ header {
   }
 }
 /* Hovedlenker (Kristoffer og kontaktskjema) */
-.kontakt-info .main-link {
-  color: #0066cc;  /* Blå som standard */
+.kontakt-info {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: #FAF6F2; /* Legger til beige bakgrunnsfarge */
+}
+
+.kontakt-info h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.info-card {
+  background: #fff;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+/* Link styling */
+.main-link {
+  color: #0066cc;
   text-decoration: none;
 }
 
-.kontakt-info .main-link:hover {
-  color: #800080;  /* Lilla når man holder musen over */
+.main-link:hover {
+  text-decoration: underline;
 }
 
-/* Kontaktinfo (telefon og epost) */
+.stilling {
+  color: #666;
+  margin: 0.5rem 0;
+}
+
+/* Profil layout */
+.profile {
+  display: flex;
+  gap: 1.5rem;
+  align-items: flex-start;
+}
+
+.profile img {
+  width: 144px; /* Justert størrelse */
+  height: 144px;
+  background: #eee;
+}
+
+.leder-info h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Kontaktinfo styling */
 address {
   font-style: normal;
   margin-top: 1rem;
+}
+
+address p {
+  margin: 0.5rem 0;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 }
 
 address a {
@@ -351,24 +402,6 @@ address a {
 
 address a:hover {
   color: #0066cc;
-}
-
-/* Profil-styling */
-.profile {
-  display: flex;
-  gap: 1.5rem;
-  align-items: flex-start;
-}
-
-.profile img {
-  width: 120px;
-  height: 120px;
-  background: #eee;
-}
-
-.leder-info h3 {
-  font-size: 1.2rem;
-  margin-bottom: 0.5rem;
 }
 
 /* Mobil-tilpasning */
