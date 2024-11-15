@@ -350,7 +350,7 @@ header {
     justify-content: center;
 }
 
-section{
+.activity-section {
     max-width: 40%; /*for å få 2 boxer ved siden av hverandre*/
     margin: 1em;
     padding: 0.5em;
