@@ -9,7 +9,35 @@
 
 <body>
     <header>
+        <img class="logo" src="../DATA1200Exam/Media/oslomet-logo.svg" alt="OsloMet logo">
     </header>
+
+    <nav id="navbar" class="navbar">
+        <ul>
+            <li><a href="../DATA1200Exam/index.html" class="home">Home</a></li>           <!-- Class "Home" muliggjør egen styling til Home -->
+            <div class="nav-toggle">                                <!-- Egen div-class for å holde Home-button utenfor (alltid synlig) -->
+                <li><a href="../DATA1200Exam/accessibility.html">Accessibility</a></li>
+                <li><a href="../DATA1200Exam/github.html">Github collaboration</a></li>
+                <li><a href="../DATA1200Exam/activity.html">Activity page</a></li>
+            </div>           
+        </ul>
+
+        <button id="hamburger-toggle" class="hamburger">      <!-- Vi trenger en ID til JS, fordi den er unik (ikke bare class, fordi de kan gjenbrukes)-->
+            <div class="icon-open">
+            <svg xmlns="http://www.w3.org/2000/svg" x-bind:width="size" x-bind:height="size" viewBox="0 0 24 24" fill="none" stroke="currentColor" x-bind:stroke-width="stroke" stroke-linecap="round" stroke-linejoin="round" width="55" height="55" stroke-width="2">
+                <path d="M4 6l16 0"></path>
+                <path d="M4 12l16 0"></path>
+                <path d="M4 18l16 0"></path>
+              </svg>
+            </div>
+            <div class="icon-close">
+                <svg xmlns="http://www.w3.org/2000/svg" x-bind:width="size" x-bind:height="size" viewBox="0 0 24 24" fill="none" stroke="currentColor" x-bind:stroke-width="stroke" stroke-linecap="round" stroke-linejoin="round" width="55" height="55" stroke-width="2">
+                    <path d="M18 6l-12 12"></path>
+                    <path d="M6 6l12 12"></path>
+                  </svg>
+            </div>
+        </button>
+    </nav>
     
 </body>
 </html>
