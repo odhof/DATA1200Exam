@@ -273,7 +273,7 @@ header {
   }
   
   .accordian input[type="checkbox"]:checked + label + .content{
-      max-height: 1000px;
+      max-height: 100%; /* prosent istedenfor pixler for å få med alt innholdet */
       padding: 10px 10px 20px;
   } 
   
