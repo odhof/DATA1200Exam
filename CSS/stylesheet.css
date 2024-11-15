@@ -4,10 +4,15 @@
 :root {        
   } 
 
+html {
+  font-size:62.5%; /* Standard font size omdef. til 10px - pga. accessibility + enklere å forholde seg til */
+}
+
 body {
     margin: unset;
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1.5;
+    font-size: 1.6rem; /*10px * 1.6 = 16px */
   }
 
 header {
@@ -153,7 +158,7 @@ header {
   background-color: #f7fafc;
 }
 
-/* responsive small screens*/
+/* responsitiv til små skjermer/mobile enheter */
 @media screen and (max-width: 768px) {
   table,thead,tbody,tr,th,td{
       display: block;
@@ -162,46 +167,22 @@ header {
   }
 }
 
-/* TABLE 2 - Studiets oppbygning (alle retninger) */
+/* TABLE 2-5 */
 
-.table2-emner-alle { 
-  width: 100%; /* Gjør tabellen responsiv */ 
-  border-collapse: separate; 
-  border-spacing: 0; 
-  background: #ffffff; 
-  box-sizing: border-box;
-  width: 100%;
-  max-width: 800px;
-  margin: 20px auto;
-  border-radius: 12px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+.tablecell-valgfriemne {
+  background-color: lightblue;
 }
 
-/* Styling av overskrift */
-.table2-emner-alle th {
-  background: #ffe481;
-  color: #2d3748;
-  font-weight: 600;
-  padding: 16px;
-  text-align: left;
-  border-bottom: 2px solid #e2e8f0;
-  white-space: nowrap;
-  box-sizing: border-box;
+.tablecell-fellesemne {
+  background-color: lightgrey;
 }
 
-/* style hver celle */
-.table2-emner-alle td {
-  padding: 14px;
-  border-bottom: 1px solid #e2e8f0;
-  color: #4a5568;
-  box-sizing: border-box;
+.tablecell-retningemne {
+  background-color: rgb(161, 221, 104);
 }
 
-/* TABLE 3 - Fys-mat */ 
-
-.table3-emner-fysmat { 
+.table2-emner-alle, .table3-emner-fysmat, .table4-emner-stat, .table5-emner-vitenskap { 
   width: 100%; 
-  border-collapse: separate; 
   border-spacing: 0; 
   background: #ffffff; 
   box-sizing: border-box;
@@ -209,101 +190,45 @@ header {
   max-width: 800px;
   margin: 20px auto;
   border-radius: 12px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
 }
 
-.table3-emner-fysmat th {
+.table2-emner-alle th, .table3-emner-fysmat th, .table4-emner-stat th, .table5-emner-vitenskap th { 
   background: #ffe481;
   color: #2d3748;
   font-weight: 600;
   padding: 16px;
   text-align: left;
-  border-bottom: 2px solid #e2e8f0;
   white-space: nowrap;
   box-sizing: border-box;
+  text-align: center;
 }
 
-.table3-emner-fysmat td {
-  padding: 14px;
-  border-bottom: 1px solid #e2e8f0;
-  color: #4a5568;
-  box-sizing: border-box;
+.table2-emner-alle th, .table3-emner-fysmat th, .table4-emner-stat th, .table5-emner-vitenskap th { 
+  padding: 7px;
+  border: 1px solid black;
+  border: collapse;
 }
 
-/* TABLE 4 - Statistiske-datadrevne */ 
-
-.table4-emner-stat { 
-  width: 100%; 
-  border-collapse: separate; 
-  border-spacing: 0; 
-  background: #ffffff; 
-  box-sizing: border-box;
-  width: 100%;
-  max-width: 800px;
-  margin: 20px auto;
-  border-radius: 12px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+.table2-emner-alle td, .table3-emner-fysmat td, .table4-emner-stat td, .table5-emner-vitenskap td { 
+  padding: 7px;
+  border: 1px solid rgb(145, 139, 133);
+  border: collapse;
 }
 
-.table4-emner-stat th {
-  background: #ffe481;
-  color: #2d3748;
-  font-weight: 600;
-  padding: 16px;
-  text-align: left;
-  border-bottom: 2px solid #e2e8f0;
-  white-space: nowrap;
-  box-sizing: border-box;
+.table2-emner-alle tr, .table3-emner-fysmat tr, .table4-emner-stat tr, .table5-emner-vitenskap tr { 
+  padding: 7px;
+  border: 1px solid rgb(145, 139, 133);
+  border: collapse;
 }
 
-.table4-emner-stat td {
-  padding: 14px;
-  border-bottom: 1px solid #e2e8f0;
-  color: #4a5568;
-  box-sizing: border-box;
-}
-
-/* TABLE 5 - Vitenskapelige beregninger */ 
-
-.table5-emner-vitenskap { 
-  width: 100%; 
-  border-collapse: separate; 
-  border-spacing: 0; 
-  background: #ffffff; 
-  box-sizing: border-box;
-  width: 100%;
-  max-width: 800px;
-  margin: 20px auto;
-  border-radius: 12px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.table5-emner-vitenskap th {
-  background: #ffe481;
-  color: #2d3748;
-  font-weight: 600;
-  padding: 16px;
-  text-align: left;
-  border-bottom: 2px solid #e2e8f0;
-  white-space: nowrap;
-  box-sizing: border-box;
-}
-
-.table5-emner-vitenskap td {
-  padding: 14px;
-  border-bottom: 1px solid #e2e8f0;
-  color: #4a5568;
-  box-sizing: border-box;
-}
-
-
-/* responsitiv til små skjermer/mobile enheter */
+/* Responsivitet (mobile) - Table 2-5 */
 @media screen and (max-width: 768px) {
-    table,thead,tbody,tr,th,td{
-        display: block;
-        width: 100%;
-        box-sizing: border-box;
-    }
+  .table5-emner-vitenskap, .table4-emner-stat, .table3-emner-fysmat, .table2-emner-alle {
+      display: block;
+      width: 100%;
+      box-sizing: border-box;
+  }
 }
 
     /*CSS til collapsible*/
@@ -348,7 +273,7 @@ header {
   }
   
   .accordian input[type="checkbox"]:checked + label + .content{
-      max-height: 1000px;
+      max-height: 100%; /* prosent istedenfor pixler for å få med alt innholdet */
       padding: 10px 10px 20px;
   } 
   
@@ -425,7 +350,7 @@ header {
     justify-content: center;
 }
 
-section{
+.activity-section {
     max-width: 40%; /*for å få 2 boxer ved siden av hverandre*/
     margin: 1em;
     padding: 0.5em;
