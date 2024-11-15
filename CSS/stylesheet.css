@@ -328,6 +328,53 @@ header {
     line-height: 18px;
   }
 }
+/* Hovedlenker (Kristoffer og kontaktskjema) */
+.kontakt-info .main-link {
+  color: #0066cc;  /* Blå som standard farge */
+  text-decoration: none;
+}
+.kontakt-info .main-link:hover {
+  color: #800080;  /* Lilla når man holder musen over linken/navnet/setningen */
+}
+/* Kontaktinfo (telefon og epost) */
+address a {
+  color: #666;
+  text-decoration: none;
+}
+address a:hover {
+  color: #0066cc;
+}
+.profile {
+  display: flex;
+  gap: 1.5rem;
+  align-items: flex-start;
+}
+.profile img {
+  width: 120px;
+  height: 120px;
+  background: #eee;
+}
+.leder-info h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+address {
+  font-style: normal;
+  margin-top: 1rem;
+}
+/* Mobil-tilpasning */
+@media (max-width: 600px) {
+  .kontakt-info {
+      padding: 1rem;
+  }
+  .profile {
+      flex-direction: column;
+  }
+  .profile img {
+      width: 100px;
+      height: 100px;
+  }
+}
 
   /*CSS til activity-pace*/
   .body-activity{
