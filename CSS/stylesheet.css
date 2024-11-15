@@ -375,6 +375,7 @@ header {
   width: 15%; /* Justert størrelse på bilde*/
   height: 15%;
   background: #eee;
+  padding-top: 10px;
 }
 
 .leder-info h3 {
