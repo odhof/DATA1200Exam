@@ -214,7 +214,7 @@ h1 {padding-left: 2em;}
 }
 
 .table2-emner-alle th, .table3-emner-fysmat th, .table4-emner-stat th, .table5-emner-vitenskap th { 
-  background: #ffe481;
+  background: #fdf3cf;
   color: #2d3748;
   font-weight: 600;
   padding: 16px;
@@ -242,12 +242,67 @@ h1 {padding-left: 2em;}
   border: collapse;
 }
 
-/* Responsivitet (mobile) - Table 2-5 */
+  /* Responsivitet (mobile) - Table 2-5 */
+  @media screen and (max-width: 768px) {
+    .table5-emner-vitenskap, .table4-emner-stat, .table3-emner-fysmat, .table2-emner-alle {
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    th {
+        display: none;
+    }
+}
+
+/* TABLE 6 */
+.table6-emner-valgfrie {
+  width: 100%; 
+  border-spacing: 0; 
+  background: #ffffff; 
+  box-sizing: border-box;
+  border-radius: 12px;
+  margin: 20px auto;   /* Sentrerer tabellen */
+  text-align: left;
+  font-size: 1.5rem;
+  text-wrap: nowrap;
+}
+
+.table6-emner-valgfrie th {
+  font-size: 1.8rem;
+  text-align: center;
+  padding: 7px;
+  border: 1px solid black;
+  border: collapse;
+  background:#fdf3cf;
+}
+
+.table6-emner-valgfrie td, .tablecell-empty {
+  padding: 7px;
+  border: 1px solid rgb(145, 139, 133);
+  border: collapse;
+  background-color: rgb(250, 245, 245)
+}
+
+.table6-emner-valgfrie tr {
+  padding: 7px;
+  border: 1px solid rgb(145, 139, 133);
+  border: collapse;
+}
+
+.tablecell-empty {
+  text-align: center;
+}
+
 @media screen and (max-width: 768px) {
-  .table5-emner-vitenskap, .table4-emner-stat, .table3-emner-fysmat, .table2-emner-alle {
+  .table6-emner-valgfrie {
       display: block;
       width: 100%;
       box-sizing: border-box;
+  }
+
+  .table6-th {
+      display: block;
   }
 }
 
