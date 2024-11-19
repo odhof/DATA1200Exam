@@ -422,6 +422,68 @@ address a:hover {
       height: 100px;
   }
 }
+/* Du er kanskje også interessert i disse? */
+.section-title { /* h2 */
+  font-size: 3rem;
+  padding: 20px 0; /* fjerner padding på siden */
+  border-bottom: 1px solid #e2e8f0;  /* samme type strek som program-item */
+  margin: 2.5rem auto auto;  /* sentrerer tittelen */
+  max-width: 700px;  /* samme bredde som program-list */
+}
+/* Hele program-listen */
+.program-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  max-width: 700px;
+  margin: 0 auto;
+}
+.program-item {
+  padding: 20px;
+  border-bottom: 1px solid #e2e8f0;
+}
+.program-title { /* bachelorprogram-tittel */
+  display: block;
+  font-size: 1.7rem;
+  color: #000000;
+  text-decoration: none;
+  margin-bottom: 8px;
+  cursor: pointer;
+  font-weight: bold;  /* kun bold, fet, skrift for overskriften - mulig å gjøre dette med et <b>-element eller <strong> i html også, men foretrukket å style i CSS (mer globalt) */
+}
+.program-details {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  color: #4a5568;
+  font-size: 1.4rem;
+}
+.program-details span { /* parent-element: Gjør at skillelinjene/vertikal-bar, |, mellom details blir riktig posisjonert, inspirert av https://medium.com/@okothelvis137/the-secrete-behind-transform-translate-50-css-property-3c46e7365bc3*/
+  position: relative;
+}
+.program-details span:not(:last-child)::after { /* child-element: alle span-elementer i program-details, unntatt siste elementet, vil få skillelinje/vertikal strek | */
+  content: ""; /* må ha med content, men skal ikke være noe synlig tekst, kunne her også lagt til vertikal strek */
+  position: absolute;
+  right: -8px; /* vertikal strek til høyre for span-elementet, teksten */
+  top: 50%;
+  transform: translateY(-50%); /* uten denne ville vertikale-streken startet på midten og gått nedover (top 50%), -50% flytter den oppover(negativ), Y: vertikal, X: horisontal, hentet fra https://medium.com/@okothelvis137/the-secrete-behind-transform-translate-50-css-property-3c46e7365bc3 */
+  width: 1px; 
+  height: 12px;
+  background-color: #cbd5e0; 
+}
+/* Mobil-responsiv */
+@media screen and (max-width: 768px) { /* her stables under hverandre: */
+  .program-details {
+      flex-direction: column; /* layout fra vannrett til loddrett */
+      gap: 8px; /* 8px mellom hvert element */
+  }
+  .program-details span::after {
+    display: none; /* trenger ikke vertikal-bar/skillelinjene (loddrett) */
+}
+.program-item {
+    padding: 16px;
+}
+}
 .overskrift-studenthistorier {margin-left: 3.5em;}
 
 .studenthistorier-container {
