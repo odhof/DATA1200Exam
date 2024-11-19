@@ -233,7 +233,17 @@ h1 {padding-left: 2em;}
   }
 }
 
-    /*CSS til collapsible*/
+.frontpage-img{
+  max-width: 80%; /*tilpasser størrelse til nettsidens bredde*/
+  display: block;
+  margin-top: 1em;
+  margin-left: auto; /*midtstiller bildet*/
+  margin-right: auto; /*midtstiller bildet*/
+}
+
+    /*CSS til collapsible
+    https://www.youtube.com/watch?v=fSkhTd4rpDo&t=7s
+    videoen er brukt som utgangspunkt til collapsible. Justeringer er gjort etter behov.*/
     
     .accordian{
       margin: 60px auto;
