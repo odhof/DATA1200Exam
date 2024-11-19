@@ -194,11 +194,11 @@ h1 {padding-left: 2em;}
 }
 
 .tablecell-fellesemne {
-  background-color: lightgrey;
+  background-color: rgba(240, 235, 235, 0.918);
 }
 
 .tablecell-retningemne {
-  background-color: rgb(161, 221, 104);
+  background-color: rgb(200, 222, 177);
 }
 
 .table2-emner-alle, .table3-emner-fysmat, .table4-emner-stat, .table5-emner-vitenskap { 
@@ -257,7 +257,7 @@ h1 {padding-left: 2em;}
     
     .accordian{
       margin: 60px auto;
-      width: 70%;
+      width: 75%;
   }
   
   .accordian li{
