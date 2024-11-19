@@ -540,4 +540,40 @@
 
     <script src="../DATA1200Exam/functions.js"></script>    <!-- OBS! Script ALWAYS at the BOTTOM -->
 </body>
+
+<!--CSS til studenthistorier-->
+<style>
+
+.overskrift-studenthistorier {margin-left: 3.5em;}
+
+.studenthistorier-container {
+    background-color:  #fdf3cf;
+    display: flex;
+    margin-left: 5em;
+    margin-right: 5em;
+    margin-bottom: 3em;
+    padding: 1em;
+}
+
+.studenthistorier-item1 {
+    order: 1; /*plasserer item som nr.1*/
+    max-width: 40%;
+}
+
+.studenthistorier-item2 {
+    order: 2; /*plasserer item som nr.2*/
+    margin-left:auto;
+    max-width: 50%;
+}
+
+.studenthistorier-link {color:black;}
+
+.ansatte {max-width: 100%; /*tilpasser bildestørrelse til flexboxen*/}
+
+.ansatte:hover {
+    transition: 2s;
+    transform:scale(1.06) /*forstørrer bildet med hover-effekt*/
+}
+
+</style>
 </html>
