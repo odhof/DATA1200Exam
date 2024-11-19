@@ -281,28 +281,28 @@ h1 {padding-left: 2em;}
   border-radius: 12px;
   margin: 20px auto;   /* Sentrerer tabellen */
   text-align: left;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   text-wrap: nowrap;
 }
 
 .table6-emner-valgfrie th {
-  font-size: 1.8rem;
+  font-size: 1.4rem;
   text-align: center;
-  padding: 7px;
+  padding: 3px;
   border: 1px solid black;
   border: collapse;
   background:#fdf3cf;
 }
 
 .table6-emner-valgfrie td, .tablecell-empty {
-  padding: 7px;
+  padding: 3px;
   border: 1px solid rgb(145, 139, 133);
   border: collapse;
   background-color: rgb(250, 245, 245)
 }
 
 .table6-emner-valgfrie tr {
-  padding: 7px;
+  padding: 3px;
   border: 1px solid rgb(145, 139, 133);
   border: collapse;
 }
@@ -329,7 +329,7 @@ h1 {padding-left: 2em;}
     
     .accordian{
       margin: 60px auto;
-      width: 75%;
+      width: 90%;
   }
   
   .accordian li{
@@ -368,6 +368,7 @@ h1 {padding-left: 2em;}
   
   .accordian input[type="checkbox"]:checked + label + .content{
       max-height: 100%; /* prosent istedenfor pixler for å få med alt innholdet */
+      max-width: 100%;
       padding: 10px 10px 20px;
   } 
   
