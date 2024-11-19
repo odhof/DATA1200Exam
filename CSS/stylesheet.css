@@ -139,53 +139,70 @@ h1 {padding-left: 2em;}
 
     /* TABLES */
   /* TABLE 1 - Programinfo */
-
-.table1-programinfo { 
-  width: 100%; /* Gjør tabellen responsiv */ 
-  border-collapse: separate; 
-  border-spacing: 0; 
-  background: #ffffff; 
-  box-sizing: border-box;
-  width: 100%;
-  max-width: 800px;
-  margin: 20px auto;
-  border-radius: 12px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-/* Styling av overskrift */
-.table1-programinfo th {
-  background: #ffe481;
-  color: #2d3748;
-  font-weight: 600;
-  padding: 16px;
-  text-align: left;
-  border-bottom: 2px solid #e2e8f0;
-  white-space: nowrap;
-  box-sizing: border-box;
-}
-
-/* style hver celle */
-.table1-programinfo td {
-  padding: 14px;
-  border-bottom: 1px solid #e2e8f0;
-  color: #4a5568;
-  box-sizing: border-box;
-}
-
-/* Hover effect på rader */ 
-.table1-programinfo tr:hover td {
-  background-color: #f7fafc;
-}
-
-/* responsitiv til små skjermer/mobile enheter */
-@media screen and (max-width: 768px) {
-  table,thead,tbody,tr,th,td{
-      display: block;
-      width: 100%;
-      box-sizing: border-box;
-  }
-}
+  .table1-programinfo { 
+    width: 100%; /* Gjør tabellen responsiv */ 
+    border-collapse: separate; 
+    border-spacing: 0; 
+    background: #ffffff; 
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 800px;
+    margin: 20px auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    
+    /* Styling av overskrift */
+    .table1-programinfo th {
+    background: #ffe481;
+    color: #2d3748;
+    font-weight: 600;
+    padding: 16px;
+    text-align: left;
+    border-bottom: 2px solid #e2e8f0;
+    white-space: nowrap;
+    box-sizing: border-box;
+    }
+    
+    /* style hver celle */
+    .table1-programinfo td {
+    padding: 14px;
+    border-bottom: 1px solid #e2e8f0;
+    color: #4a5568;
+    box-sizing: border-box;
+    }
+    
+    /* Hover effect på rader, strengt tatt ikke nødvendig her */ 
+    .table1-programinfo tr:hover td {
+    background-color: #f7fafc;
+    }
+    /* Responsiv på mobil */
+    @media screen and (max-width: 768px) {
+      .table1-programinfo thead {
+          display: none; /* skjuler original header */
+      }
+      
+      .table1-programinfo tbody tr {
+          display: block; /* hver rad vertikal, ikke column*/
+          margin-bottom: 1rem;
+          border: 1px solid #e2e8f0;
+          border-radius: 8px;
+          padding: 1rem;
+      }
+      
+      .table1-programinfo td { /* hver celle */
+          display: flex;
+          padding: 0.5rem 0;
+          border: none;
+      }
+      
+      .table1-programinfo td::before { /*before her: vise data-label-verdien, overskriften, før celleinnholdet: eks. "Studiested: Pilestredet Oslo" */
+          content: attr(data-label); /* her blir attributten aksessert https://www.w3schools.com/tags/att_data-.asp Henter verdien fra data-label attributten, f.eks. "Studiested" og dens celleverdi: "Pilestredet Oslo" */ 
+          font-weight: bold;
+          width: 40%;
+          margin-right: 1rem;
+      }
+    }
 
 /* TABLE 2-5 */
 
