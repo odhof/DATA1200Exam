@@ -36,6 +36,11 @@ h1 {padding-left: 2em;}
   text-align: center;
 }
 
+.p-underoverskrift {
+  font-size: 2rem;
+  margin-left: 1rem;
+}
+
 /* NAV-BAR - HAMBURGER */ 
   
 .navbar {
@@ -437,6 +442,7 @@ address a:hover {
       height: 100px;
   }
 }
+
 /* Du er kanskje også interessert i disse? */
 .section-title { /* h2 */
   font-size: 3rem;
@@ -445,6 +451,7 @@ address a:hover {
   margin: 2.5rem auto auto;  /* sentrerer tittelen */
   max-width: 700px;  /* samme bredde som program-list */
 }
+
 /* Hele program-listen */
 .program-list {
   list-style: none;
