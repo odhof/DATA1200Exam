@@ -41,11 +41,61 @@
 </body>
 
 <main>
-<h1 class ="accessibility-h1">Accessibility</h1>
+    <h1 class ="accessibility-h1">Accessibility</h1>
+    
+    <section class="accessibility-section">
+        <p>I accessibility ligger det at siden skal være tilgjengelig for individer med nedsatt funksjonsevne, eks.
+            folk med syns- eller hørselshemninger. Det kan være blinde, men også f.eks. svaksynte, fargeblinde eller lignende.
+            Siden bør være tilgjengelig for alle, og de valgene man tar mht. kode, design og annet bør ta hensyn til dette.
+        </p>
+        <p>Derfor er det viktig med en god struktur, god funksjonalitet og brukervennlighet på nettsiden man lager.
+            For å få til dette, har vi forsøkt å bruke passende, semantiske html-elementer så langt det er mulig.
+            Det vil si ting som main, header, footer, ulike heading-nivåer, sections, articles, lists og tables.</p>
+        <p>En annen ting som er viktig, er å gi alle bilder man bruker en "alt-tekst". Formålet med alt dette, 
+            er at det skal være mulig å fange opp og være lesbart av screen-readers. Vi har også inkludert dette på
+            alle våre image-elementer. Når man bruker semantiske elementer riktig, vil også alt innhold på siden
+            fanges opp, grupperes og leses riktig av slike automatiske verktøy. Aria-labels er også relevant i denne sammenhengen,
+            og vi har derfor forsøkt å anvende dette også enkelte steder.
+        </p>
+        <p>Et annet relevant aspekt er design, f.eks. farge-valg, som er viktig bl.a. på grunn av kontrast-ratio. Skrift skal være enkelt
+            lesbart for alle, også de med evt. synsnedsettelser. Det viktige blir da valg av bakgrunnsfarge kontra farge på font, og type font. 
+            Vi har her valgt å endre standard bakgrunnsfarge på Oslo Met. Dette fordi vi synes den nåværende gulfargen er noe kraftig og voldsom.
+            Vi har derfor valgt å gå for en dusere, lysere variant, men som fortsatt ivaretar OsloMets karakteristiske fargeprofil.
+            Det kan også nevnes at OsloMet i 2018 fikk kritikk for nettopp bruken av denne gulfargen, da det minnet om den typiske
+            fargen på smitte- og infeksjon (https://www.khrono.no/profilering-farger-skilt/fagforeninger-advarer-mot-gult-i-logoen-pa-oslomet/214366).
+            Vi bruker også standard sort farge på all tekst, med bakgrunn hvit, lys gul eller lys blå, noe som gir god kontrast ratio.
+            Dette fikk vi også god skåre på i accessibility-testen (se nedenfor).
+        </p>
+        <p>
+            Vi har også en godt utformet navigasjons-bar, med linker til alle sidene, som skal være selvforklarende, tydelig
+            og tilstede på alle sidene, med unntak av på activity-siden hvor den har et noe ulikt design, men hvor innholdet er det samme.
+            På denne har vi også lagt til en hover-effect. Vi har lagt til cursor pointers på alle linker på siden, for å synliggjøre
+            for bruker at disse er funksjonelle, og at det er nettopp linker.
+        </p>
+        <p> En spesifikk utfordring vi har forsøkt å løse er utformingen/designet av tabellen under "Studiets oppbygning", som i nåværende
+            form fremstår meget uoversiktelig og forvirrende. Vi valgte her å samle det mer kompakt i færre tabeller. Vi mener
+            resultatet er bedre og mer oversiktelig. Dog oppstår det en utfordring med scalability ift. smalere skjermer. 
+            Problemet er at tabellen kuttes av såvidt det er helt på høyre side (på siste av 4 kolonner). Her har vi forsøkt ulike løsninger,
+            bl.a. div. @media-queries, men vi lykkes ikke med å finne noen optimal løsning, uten at man må gjøre om hele grunnlaget for tabellen.
+            Derfor valgte vi å beholde den slik den er.
+        </p>
+        <p>Vi har kjørt siden gjennom en <strong>automatisert test av accessibility</strong>. Her har vi brukt <i>WAVE web-accessibility evaluation tool</i> (som extension til chrome),
+            som har analysert siden vår. <b>Resultatene følger i screenshots under:</b>
+        </p>
 
-<article>
+        <img src="../DATA1200Exam/Media/resultater_wave_1.PNG" alt="resultater wave test 1">
+        <img src="../DATA1200Exam/Media/resultater_wave_2.PNG" alt="3 stk. errors wave test">
+        <img src="../DATA1200Exam/Media/resultater_wave_3.PNG" alt="Missing alt tekst bilde">
+        <img src="../DATA1200Exam/Media/resultater_wave_4.PNG" alt="Missing fieldset boxes">
+        <img src="../DATA1200Exam/Media/resultater_wave_5.PNG" alt="Missing alt tekst bilde">
+        <img src="../DATA1200Exam/Media/resultater_wave_6.PNG" alt="antall structural elements">
+        <img src="../DATA1200Exam/Media/resultater_wave_7.PNG" alt="antall structural elements forts.">
 
-</article>
+        <img src="../DATA1200Exam/Media/resultater_wave_kontrast.PNG" alt="resultater_wave_kontrast">
+
+        <img src="../DATA1200Exam/Media/nye-resultater_wave_1.PNG" alt="resultat etter utbedring av feil">
+        <img src="../DATA1200Exam/Media/nye-resultater_wave_2.PNG" alt="resultat etter utbedring av feil">
+    </section>
 </main>
 
 </html>
