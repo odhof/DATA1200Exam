@@ -643,6 +643,9 @@ address a:hover {
   padding: 1em;
   margin: 5px;
 }
+.nav-item-activity a:hover{
+  background-color: #cbcbbb;
+}
 
 
 .h1-activity{
