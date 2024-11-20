@@ -282,7 +282,7 @@ h1 {padding-left: 2em;}
   margin: 20px auto;   /* Sentrerer tabellen */
   text-align: left;
   font-size: 1.2rem;
-  text-wrap: nowrap;
+  text-wrap: wrap;
 }
 
 .table6-emner-valgfrie th {
