@@ -637,7 +637,7 @@ address a:hover {
   color: black;
 }
 
-nav a {
+.nav-item-activity a{
   color:black;
   border: solid black;
   padding: 1em;
