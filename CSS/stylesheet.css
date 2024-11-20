@@ -30,7 +30,7 @@ body {
     margin-left: 20px;
 }
 
-h1 {padding-left: 2em;}
+.frontpage-h1 {padding-left: 2em;}
 
 .frontpage-img {
   max-width: 80%; /*tilpasser størrelse til nettsidens bredde*/
