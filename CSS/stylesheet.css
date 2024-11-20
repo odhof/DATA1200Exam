@@ -556,7 +556,7 @@ h3 a { /* Bachelorprogram-tittel */
   text-decoration: none;
   margin-bottom: 4px;
   cursor: pointer;
-  font-weight: bold; /* kun bold, fet, skrift for overskriften - mulig å gjøre dette med et <b>-element eller <strong> i html også, men foretrukket å style i CSS (mer globalt) */
+  font-weight: bold; /* kun bold, fet, skrift for overskriften - mulig å gjøre dette med et <b>-element (som i tables tidligere) eller <strong> i html også, men foretrukket å style i CSS (mer globalt) "If you wish to create boldface text, you should use the CSS font-weight property."https://developer.mozilla.org/en-US/docs/Web/HTML/Element/b*/
 }
 
 .program-meta {
