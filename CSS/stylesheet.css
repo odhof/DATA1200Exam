@@ -600,13 +600,13 @@ h3 a { /* Bachelorprogram-tittel */
     padding: 16px;
   }
 }
-.overskrift-studenthistorier {margin-left: 3.5em;}
+.overskrift-studenthistorier {margin-left: 11em;}
 
 .studenthistorier-container {
     background-color:  #fdf3cf;
     display: flex;
-    margin-left: 5em;
-    margin-right: 5em;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 3em;
     padding: 1em;
 }
