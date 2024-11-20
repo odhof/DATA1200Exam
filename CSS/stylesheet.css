@@ -15,7 +15,7 @@ body {
     font-size: 1.6rem; /*10px * 1.6 = 16px */
   }
 
-header {
+.header-index {
     background-color: #fdf3cf;
     padding: 5%; 
 }
