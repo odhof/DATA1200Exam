@@ -8,12 +8,19 @@ html {
   font-size:62.5%; /* Standard font size omdef. til 10px - pga. accessibility + enklere å forholde seg til */
 }
 
-body {
+.body-index {
     margin: unset;
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1.5;
     font-size: 1.6rem; /*10px * 1.6 = 16px */
   }
+
+.body-accessibility {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+    font-size: 1.6rem; /*10px * 1.6 = 16px */
+  }
+
 
 .header-index {
     background-color: #fdf3cf;
@@ -751,6 +758,16 @@ font-size: 1.2rem;
 /*CSS accessibility*/
 .accessibility-h1 {
  text-align: center;
+}
+
+.accessibility-bilder1 {
+  height: 90%;
+  width: 90%;
+}
+
+.accessibility-bilder2 {
+  height: 40%;
+  width: 40%;
 }
 
 

@@ -7,7 +7,7 @@
     <title>Accessibility</title>
 </head>
 
-<body>
+<body class="body-accessibility">
     <header class="header-index">
         <img class="logo" src="../DATA1200Exam/Media/oslomet-logo.svg" alt="OsloMet logo">
     </header>
@@ -38,7 +38,6 @@
             </div>
         </button>
     </nav>
-</body>
 
 <main>
     <h1 class ="accessibility-h1">Accessibility</h1>
@@ -83,19 +82,37 @@
             som har analysert siden vår. <b>Resultatene følger i screenshots under:</b>
         </p>
 
-        <img src="../DATA1200Exam/Media/resultater_wave_1.PNG" alt="resultater wave test 1">
-        <img src="../DATA1200Exam/Media/resultater_wave_2.PNG" alt="3 stk. errors wave test">
-        <img src="../DATA1200Exam/Media/resultater_wave_3.PNG" alt="Missing alt tekst bilde">
-        <img src="../DATA1200Exam/Media/resultater_wave_4.PNG" alt="Missing fieldset boxes">
-        <img src="../DATA1200Exam/Media/resultater_wave_5.PNG" alt="Missing alt tekst bilde">
-        <img src="../DATA1200Exam/Media/resultater_wave_6.PNG" alt="antall structural elements">
-        <img src="../DATA1200Exam/Media/resultater_wave_7.PNG" alt="antall structural elements forts.">
+        <br/>
 
-        <img src="../DATA1200Exam/Media/resultater_wave_kontrast.PNG" alt="resultater_wave_kontrast">
+        <p>Her ser vi resultatene fra første test, hvor det blir påpekt 3 stk. feil</p>
+        <img class="accessibility-bilder1" src="../DATA1200Exam/Media/resultater_wave_1.PNG" alt="resultater wave test 1">
 
-        <img src="../DATA1200Exam/Media/nye-resultater_wave_1.PNG" alt="resultat etter utbedring av feil">
-        <img src="../DATA1200Exam/Media/nye-resultater_wave_2.PNG" alt="resultat etter utbedring av feil">
+        <p>Som vi ser er det feil påpekt med manglende alt-tekst til 2x bilder:</p>
+        <img class="accessibility-bilder2" src="../DATA1200Exam/Media/resultater_wave_2.PNG" alt="3 stk. errors wave test">
+        <img class="accessibility-bilder1" src="../DATA1200Exam/Media/resultater_wave_3.PNG" alt="Missing alt tekst bilde">
+        <img class="accessibility-bilder1" src="../DATA1200Exam/Media/resultater_wave_5.PNG" alt="Missing alt tekst bilde">
+
+        <p>Her påpekes det mulig feil med missing fieldset boxes:</p>
+        <img class="accessibility-bilder1" src="../DATA1200Exam/Media/resultater_wave_4.PNG" alt="Missing fieldset boxes">
+
+        <p>Resten av resultatene, hvor det oppsummeres antall strukturelle html-elementer, og generell struktur:</p>
+        <img class="accessibility-bilder2" src="../DATA1200Exam/Media/resultater_wave_6.PNG" alt="antall structural elements">
+        <img class="accessibility-bilder2" src="../DATA1200Exam/Media/resultater_wave_7.PNG" alt="antall structural elements forts.">
+
+        <p>Gode resultalter fra test av kontrast ratio. Ingen feil oppdaget, og "pass"-skåre i flere kategorier.
+            Kontrast ratio = 8.59:1
+        </p>
+        <img class="accessibility-bilder1" src="../DATA1200Exam/Media/resultater_wave_kontrast.PNG" alt="resultater_wave_kontrast">
+
+        <p>Resultater fra andre testgjennomgang. Dette etter at vi har lagt til alt-tekst på begge bilder hvor det manglet. Kun én feil gjenstår, med mulig manglende button text. Vi forsøkte å se hva dette kunne dreie seg
+            om, men kunne ikke finne ut av akkurat hva det var. Vi mistenker at det muligens skyldes den løsningen vi har valgt til Hamburger-button,
+            hvor vi ikke har button tekst, men i stedet et .svg-bilde (selve hamburger-buttonen).
+        </p>
+        <img class="accessibility-bilder1" src="../DATA1200Exam/Media/nye-resultater_wave_1.PNG" alt="resultat etter utbedring av feil">
+        <img class="accessibility-bilder2" src="../DATA1200Exam/Media/nye-resultater_wave_2.PNG" alt="resultat etter utbedring av feil">
     </section>
 </main>
+
+</body>
 
 </html>
