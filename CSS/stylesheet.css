@@ -631,72 +631,6 @@ h3 a { /* Bachelorprogram-tittel */
     transform:scale(1.06) /*forstørrer bildet med hover-effekt*/
 }
 
-/* ACTIVITY PAGE */
-
-.body-activity {
-    background-color: #EEEBDF;
-}
-.activity-header {
-  background-color: #EEEBDF;
-  height: 50%;
-  width: 50%;
-  display: block;
-  padding-top: 1em;
-  margin-left: auto;
-  margin-right: auto; 
-  padding-bottom: 2em; /*Nytter navbar lenger end*/
-}
-
-.nav-activity {
-  list-style-type: none; /*Fjerner bulllet point fra navbar*/
-  text-align: center;
-  margin: 0; /* Fjerner nettleserens standardinnstillinger*/
-  padding: 0; 
-}
-
-.nav-item-activity {
-  display: inline; /*Gjør navbaren horisontal*/
-  color: black;
-}
-
-.nav-item-activity a {
-  color:black;
-  border: solid black;
-  padding: 1em;
-  margin: 5px;
-}
-.nav-item-activity a:hover{
-  background-color: #cbcbbb;
-}
-
-.h1-activity {
-    font-size: 50px;
-    text-align: center;
-}
-
-.main-activity {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.activity-section {
-    max-width: 40%; /*for å få 2 boxer ved siden av hverandre*/
-    margin: 1em;
-    padding: 0.5em;
-    background-color: rgb(250, 240, 228);
-}
-
-.knitting {
-max-width: 100%; /* får bildet til å passe flexboxen*/
-padding-top:10px;
-}
-
-footer p {
-  padding-left:150px;
-  font-size: 1.2rem;
-}
-
 .grid-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr; /* Lager 3 colonner til grid */
@@ -724,6 +658,77 @@ footer p {
 }
 
 a:hover { text-decoration: underline; /*Gir linje under linken ved hover*/ }
+
+/* ACTIVITY PAGE */
+
+.body-activity {
+  background-color: #EEEBDF;
+}
+.activity-header {
+background-color: #EEEBDF;
+height: 50%;
+width: 50%;
+display: block;
+padding-top: 1em;
+margin-left: auto;
+margin-right: auto; 
+padding-bottom: 2em; /*Nytter navbar lenger end*/
+}
+
+.nav-activity {
+list-style-type: none; /*Fjerner bulllet point fra navbar*/
+text-align: center;
+margin: 0; /* Fjerner nettleserens standardinnstillinger*/
+padding: 0; 
+}
+
+.nav-item-activity {
+display: inline; /*Gjør navbaren horisontal*/
+color: black;
+}
+
+.nav-item-activity a {
+color:black;
+border: solid black;
+padding: 1em;
+margin: 5px;
+}
+.nav-item-activity a:hover{
+background-color: #cbcbbb;
+}
+
+.h1-activity {
+  font-size: 50px;
+  text-align: center;
+}
+
+.main-activity {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.activity-section {
+  max-width: 40%; /*for å få 2 boxer ved siden av hverandre*/
+  margin: 1em;
+  padding: 0.5em;
+  background-color: rgb(250, 240, 228);
+}
+
+.knitting {
+max-width: 100%; /* får bildet til å passe flexboxen*/
+padding-top:10px;
+}
+
+footer p {
+padding-left:150px;
+font-size: 1.2rem;
+}
+
+/*CSS accessibility*/
+.accessibility-h1 {
+ text-align: center;
+}
 
 
 
