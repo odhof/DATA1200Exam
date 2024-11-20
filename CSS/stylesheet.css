@@ -41,17 +41,14 @@ body {
 }
 
 .p-underoverskrift {
-  font-size: 1.6rem;
+  font-size: 2.0rem;
   padding-left: 2.8em;
 }
 
+.p-innledning {text-align: center;}
+
 .h2-table2-5 {
   text-align: center;
-}
-
-.p-underoverskrift {
-  font-size: 2rem;
-  margin-left: 1rem;
 }
 
 /* NAV-BAR - HAMBURGER */ 
@@ -518,19 +515,12 @@ address a:hover {
 }
 
 /* Du er kanskje også interessert i disse? */
-section {
-  max-width: 700px;
-  margin: 0 auto; /* Seksjonen er nå sentrert på siden */
-}
-
-/* Overskrift: "Du er kanskje også..." */
-.h2-programs {
+.section-title { /* h2 */
   font-size: 3rem;
-  padding: 20px 0;
-  border-bottom: 1px solid #e2e8f0; /* samme type strek som .program-item */
-  margin: 2.5rem auto auto; /* sentrerer tittelen */
-  width: 100%;
-  text-align: left; 
+  padding: 20px 0; /* fjerner padding på siden */
+  border-bottom: 1px solid #e2e8f0;  /* samme type strek som program-item */
+  margin: 2.5rem auto auto;  /* sentrerer tittelen */
+  max-width: 700px;  /* samme bredde som program-list */
 }
 
 /* Hele program-listen */
@@ -538,71 +528,54 @@ section {
   list-style: none;
   padding: 0;
   margin: 0;
-  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
 }
-
 .program-item {
-  padding: 24px 20px;
+  padding: 20px;
   border-bottom: 1px solid #e2e8f0;
-  text-align: left; /* Venstrejustert tekst */
 }
- 
-h3 { 
-  margin: 0;
-  text-align: left;
-}
-
-h3 a { /* Bachelorprogram-tittel */
+.program-title { /* bachelorprogram-tittel */
   display: block;
   font-size: 1.7rem;
   color: #000000;
   text-decoration: none;
-  margin-bottom: 4px;
+  margin-bottom: 8px;
   cursor: pointer;
-  font-weight: bold; /* kun bold, fet, skrift for overskriften - mulig å gjøre dette med et <b>-element eller <strong> i html også, men foretrukket å style i CSS (mer globalt) */
+  font-weight: bold;  /* kun bold, fet, skrift for overskriften - mulig å gjøre dette med et <b>-element eller <strong> i html også, men foretrukket å style i CSS (mer globalt) */
 }
-
-.program-meta {
+.program-details {
   display: flex;
   flex-wrap: wrap;
   gap: 16px;
   color: #4a5568;
   font-size: 1.4rem;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  justify-content: flex-start; /* starter fra venstre */
 }
-
-
-.program-meta li { /* parent-element: Gjør at skillelinjene/vertikal-bar, |, mellom details blir riktig posisjonert, inspirert av https://medium.com/@okothelvis137/the-secrete-behind-transform-translate-50-css-property-3c46e7365bc3*/
+.program-details span { /* parent-element: Gjør at skillelinjene/vertikal-bar, |, mellom details blir riktig posisjonert, inspirert av https://medium.com/@okothelvis137/the-secrete-behind-transform-translate-50-css-property-3c46e7365bc3*/
   position: relative;
 }
-
-.program-meta li:not(:last-child)::after { /* child-element: alle span-elementer i program-details, unntatt siste elementet, vil få skillelinje/vertikal strek | */
+.program-details span:not(:last-child)::after { /* child-element: alle span-elementer i program-details, unntatt siste elementet, vil få skillelinje/vertikal strek | */
   content: ""; /* må ha med content, men skal ikke være noe synlig tekst, kunne her også lagt til vertikal strek */
   position: absolute;
-  right: -8px; /* vertikal strek til høyre for teksten */
+  right: -8px; /* vertikal strek til høyre for span-elementet, teksten */
   top: 50%;
   transform: translateY(-50%); /* uten denne ville vertikale-streken startet på midten og gått nedover (top 50%), -50% flytter den oppover(negativ), Y: vertikal, X: horisontal, hentet fra https://medium.com/@okothelvis137/the-secrete-behind-transform-translate-50-css-property-3c46e7365bc3 */
-  width: 1px;
+  width: 1px; 
   height: 12px;
-  background-color: #cbd5e0;
+  background-color: #cbd5e0; 
 }
-
+/* Mobil-responsiv */
 @media screen and (max-width: 768px) { /* her stables under hverandre: */
-  .program-meta {
-    flex-direction: column; /* layout fra vannrett til loddrett */
-    gap: 8px;
+  .program-details {
+      flex-direction: column; /* layout fra vannrett til loddrett */
+      gap: 8px; /* 8px mellom hvert element */
   }
-  
-  .program-meta li::after {
+  .program-details span::after {
     display: none; /* trenger ikke vertikal-bar/skillelinjene (loddrett) */
-  }
-
-  .program-item {
+}
+.program-item {
     padding: 16px;
-  }
+}
 }
 .overskrift-studenthistorier {margin-left: 3.5em;}
 
