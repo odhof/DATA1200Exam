@@ -755,6 +755,25 @@ padding-left:150px;
 font-size: 1.2rem;
 }
 
+.grid-item-1-activity {
+  background-color: #464c56;
+  color:#cbd5e0;
+}
+
+.grid-item-2-activity {
+  background-color: #464c56;
+  color:#cbd5e0;
+}
+.grid-item-3-activity {
+  background-color: #464c56;
+  color:#cbd5e0;
+}
+
+.footer-link-activity{
+  color:#cbd5e0;
+  text-decoration: none;
+  
+}
 /*CSS accessibility*/
 .accessibility-h1 {
  text-align: center;
