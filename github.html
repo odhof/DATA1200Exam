@@ -7,7 +7,7 @@
     <title>Github</title>
 </head>
 
-<body>
+<body class="body-index">
     <header class="header-index">
         <img class="logo" src="../DATA1200Exam/Media/oslomet-logo.svg" alt="OsloMet logo">
     </header>
@@ -38,6 +38,66 @@
             </div>
         </button>
     </nav>
+<main>
+    <article>
+        <h1>GitHub Collaboration</h1>
+        <p>I arbeidet med denne oppgaven har vi møtt på flere utfordringer knyttet tik bruken av 
+            GitHub og GitHub Desktop. Det har vært en bratt læringskurve, spesielt når det gjelder å lære 
+            seg et nytt verktøy samtidig som vi skulle samarbeide om endringer i de samme filene. </p>
+
+            <h2>Oppstartsproblemer</h2>
+            <ul>
+                <li>Utfordringer med manuell installering av Git</li>
+                <li>Problemer med å koble VS Code til GitHub-kontoen</li>
+                <li>Forvirring rundt staging av endringer</li>
+                <li>Usikkerhet rundt når man skulle committe/pushe</li>
+            </ul>
+
+            <h2>Synkroniseringsproblemer</h2>
+            <ul>
+                <li>Synkroniseringsproblemer mellom lokale filer og repository</li>
+                <li>Push/pull feilet på grunn av usynkroniserte endringer</li>
+                <li>Merge conflicts når flere jobbet i samme fil</li>
+                <li>Utfordringer med å løse konflikter i GitHub-grensensittet</li>
+            </ul>
+            <p> Vi trodde at vi så lenge vi ikke endret samme linje i en fil, ville alt gå greit. Men vi 
+                oppdaget at selv når vi jobbet i forskjellige deler av koden, kunnne det oppstå konflikter 
+                når linjene med kode var så lange at vi endte opp med å endre samme linje som en annen.</p>
+                
+            <p>For å håndtere disse utfordringene implementerte vi flere løsninger: </p>
+            <ul>
+                <li>Vi opprettet egne kladdeark hvor vi jobbet uavhengig, før vi limte koden inn i den riktig filen</li>
+                <li>Vi fokuserte på god kommunikasjon og hadde hyppoge fysiske møter</li>
+                <li>Vi hjalp hverandre med koden og informerte hverandre når vi var klare til å committe</li>
+            </ul>
+            <p>Vi kunne ha utforsket branches i større grad for å unngå merge conflicts, men ettersom vi 
+                hadde hatt såpass mye problemer med Git i begynnelse, var vi skeptiske til å utforskje enda 
+                en funksjon som vi ikke var kjent med. </p>
+
+        <h2>Læringspunkter</h2>
+            <p>I etterkant ser vi at vi burde ha implemneter branches, da man i utgangspunktet 
+            aldri bør jobbe direkte i main – noe som blir spesielt tungvint i større prosjekter. Ved å opprette 
+            separate branches for hver feature, kunne vi ha unngått flere av problemene som oppstod. Dette 
+            er verdifull erfaring som vi tar med oss videre til neste prosjekt</p>
+    </article>
+</main>
     
 </body>
+
+<!--CSS-->
+<style>
+    main{
+        padding: 0 20% 0 20%; /*Gir padding til høyre og venstre side av nettsiden*/
+}
+
+    h1{
+        text-align: center;
+    }
+    h2{
+        text-align: center;
+    }
+
+</style>
+
 </html>
+
