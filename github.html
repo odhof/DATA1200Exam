@@ -80,6 +80,25 @@
             separate branches for hver feature, kunne vi ha unngått flere av problemene som oppstod. Dette 
             er verdifull erfaring som vi tar med oss videre til neste prosjekt</p>
     </article>
+    <!-- Skjermbilder av Github-Desktop -->
+    <section class="git-pictures">
+        <figure> <!-- -->
+            <img src="../DATA1200Exam/Media/skjermbildeGitHub_endringer1.png" alt="skjermbilde 1 av github">
+            <figcaption>Eksempel 1: Commits history</figcaption>
+        </figure>
+        <figure>
+            <img src="../DATA1200Exam/Media/skjermbildeGitHub_endringer2.png" alt="skjermbilde 2 av github">
+            <figcaption>Eksempel 2: Commits history</figcaption>
+        </figure>
+        <figure>
+            <img src="../DATA1200Exam/Media/skjermbilde_spesifikke_endringer1.png" alt="skjermbilde 1 av spesifike endringer i commit">
+            <figcaption>Eksempel 1: Spesifik endring av bilde-størrelse i en Commit</figcaption>
+        </figure>
+        <figure>
+            <img src="../DATA1200Exam/Media/skjermbilde_spesifikke_endringer2.png" alt="skjermbilde 2 av spesifike endringer i commit">
+            <figcaption>Eksempel 2: Spesifik endring av margen i en Commit</figcaption>
+        </figure>
+    </section>
 </main>
     
 </body>
@@ -96,6 +115,20 @@
     h2{
         text-align: center;
     }
+    /*Grid til bildene: */
+    .git-pictures {
+        display: grid;
+        grid-template-columns: 1fr 1fr; /* to kolonner */
+        gap: 20px;
+    }
+    .git-pictures figure {
+        margin: 0px;
+    }
+    .git-pictures img {
+        width: 100%;
+        height: auto;
+    }
+ 
 
 </style>
 
